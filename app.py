@@ -3,7 +3,7 @@ from groq import Groq
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=False)
 print("API KEY LOADED:", os.environ.get("GROQ_API_KEY")) 
 app = Flask(__name__)
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
