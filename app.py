@@ -20,7 +20,7 @@ def chat():
         stream = client.chat.completions.create(
             model="llama-3.1-8b-instant",
             messages=[
-                {"role": "system", "content": "You are a helpful  chatbot."},
+                {"role": "system", "content": "You are a friendly and helpful  chatbot."},
                 {"role": "user", "content": user_message}
             ],
             stream=True
